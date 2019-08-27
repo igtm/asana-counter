@@ -1,33 +1,13 @@
-# Chrome Extension app: [StoryPoint for Asana](https://chrome.google.com/webstore/detail/storypoint-for-asana/ipkcinfcdhhcmibffhlklololceffgnc)
+# Asana counter
+Chrome Extension to calculate tasks and points in Asana
+Article about it https://www.boostlabs.com/improve-your-teams-agile-process-in-asana/
 
-[![chrome web store](https://img.shields.io/chrome-web-store/v/ipkcinfcdhhcmibffhlklololceffgnc.svg)](https://chrome.google.com/webstore/detail/storypoint-for-asana/ipkcinfcdhhcmibffhlklololceffgnc)
-[![Donate to this project using Patreon](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://www.patreon.com/igtm)
+Install bia Chrome store
+https://chrome.google.com/webstore/detail/asana-counter-extention/npbhpppmgfjodckhiomoicgjaakmklnl
 
-This app tracks scrum story points super-easily on Asana boards.
-
-![point](./docs/point.jpg)
-
-# Features
-
-- you can track story points
-- you can check both "NotCompleted points" and "Completed points" summed up automatically in each column
-- you can check both "NotCompleted points" and "Completed points" story points summed up automatically in a project
-- you can sum up subtask story points in a task
-
-# Supported Layouts
-
-### Board Layout
-![board](./docs/board.jpg)
-
-### List Layout
-![list](./docs/list.jpg)
-
-
-# Known Issues
-
-- Asana Board: tasks on each lists are lazy-loaded. so if you have more than almost 25 tasks in a list, summed up points may be wrong or under-calculated. so if you calculate total points correctly, just scroll each list!
-
-
-# Todos
-
-- [ ] dynamic story point range
+## How to install to debug
+1. Install Cutom Java Script extention https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija
+2. Open Asana in a tab
+3. Open Cutom Java Script extention
+4. Paste all code from script.js and click Save button
+5. You should see counters on top of columns in a board view of Asana
