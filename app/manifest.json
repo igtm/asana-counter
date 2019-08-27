@@ -1,0 +1,32 @@
+{
+  "manifest_version":2,
+  "name": "Asana Counter Extension (fork)",
+  "description": "Asana tasks and points counter. Points must to be a custom Asana drop-down property with numbers only and with ANY color.",
+  "icons": {"128": "images/icon-128.png" },
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "128": "images/icon-128.png"
+    },
+    "default_title": "Works on Asana app"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "version": "0.5",
+  "content_scripts":[
+    {
+      "matches": [
+          "https://app.asana.com/*"
+      ],
+      "js": [
+        "scripts/contentscript.js"
+      ]
+    }
+  ]
+}
