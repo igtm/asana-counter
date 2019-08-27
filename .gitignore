@@ -8,4 +8,4 @@ test/bower_components
 package
 app/scripts
 .idea
-dist.*
+dist.pem
